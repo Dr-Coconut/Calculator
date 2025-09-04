@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(255, 208, 170);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  width: 50vh;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(61, 61, 61);
+  padding: 20px;
+}
+
+.display {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(195, 255, 180);
+  flex-grow: 1.2;
+  flex-shrink: 1;
+  flex-basis: 0;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 7vh;
+  padding-right:10px ;
+  font-family: 'Orbitron'
+}
+
+.row {
+  border: 1px solid white;
+  flex: 1;
+}
