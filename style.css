@@ -22,17 +22,50 @@ body {
   justify-content: flex-end;
   align-items: center;
   background-color: rgb(195, 255, 180);
-  flex-grow: 1.2;
+  flex-grow: 1.5;
   flex-shrink: 1;
   flex-basis: 0;
   border: 2px solid black;
   border-radius: 10px;
   font-size: 7vh;
-  padding-right:10px ;
-  font-family: 'Orbitron'
+  padding-right: 10px;
+  font-family: "Orbitron";
+  margin-bottom: 10px;
 }
 
 .row {
-  border: 1px solid white;
+  display: flex;
+  /* border: 1px solid white; */
   flex: 1;
+  padding: 20px;
+  gap: 30px;
+}
+
+button {
+  flex: 1;
+  font-size: 4vh;
+  font-family: "Orbitron";
+  color: white;
+  border-radius: 5px;
+}
+
+.number {
+  background-color: rgb(151, 151, 151);
+}
+
+.special {
+  background-color: rgb(255, 201, 255);
+  color: rgb(255, 104, 167);
+}
+
+.delete {
+  background-color: rgb(255, 105, 105);
+}
+
+.operator {
+  background-color: rgb(122, 228, 255);
+}
+
+.equals {
+  background-color: rgb(255, 167, 116);
 }
