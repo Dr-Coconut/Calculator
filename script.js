@@ -4,7 +4,7 @@ function operate(num1, op, num2) {
   } else if (op == "-") {
     return num1 - num2;
   } else if (op == "÷") {
-    return Math.round((num1 / num2) * 1000) / 1000;
+    return Math.round((num1 / num2) * 1000) / 1000; //round 3 decimal places
   } else if (op == "×") {
     return num1 * num2;
   } else if (op == "%") {
@@ -21,16 +21,30 @@ const nums = new Set(["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]);
 const ops = new Set(["÷", "×", "+", "-", "%"]);
 
 function input() {
+  //num1 input
   if (op === "" && nums.has(this.textContent)) {
     content1 += this.textContent;
-  } else if (
+  } 
+  //clear all
+  else if (this.textContent == "AC") {
+    content1 = "";
+    content2 = "";
+    num1 = null;
+    num2 = null;
+    op = "";
+    display.textContent="";
+  }
+  //operator input
+  else if (
     num1 !== null &&
     op === "" &&
     ops.has(this.textContent) &&
     num2 === null
   ) {
     op = this.textContent;
-  } else if (op !== "" && nums.has(this.textContent)) {
+  }
+  //num2 input
+  else if (op !== "" && nums.has(this.textContent)) {
     content2 += this.textContent;
   }
   //'=' input
